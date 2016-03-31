@@ -23,6 +23,7 @@ header {
 }
 header img{
   width: 100%;
+  margin-bottom: .25em;
 }
 
 /*Layout*/
@@ -30,10 +31,11 @@ header img{
   background-color: rgba(10,10,10, .2);
   max-width: 40em;
   padding: 2em;
+  border-radius: .5em;
 }
 
 #loginwrapper label {
-  color: antiquewhite;
+  color: ghostwhite;
 }
 
 #loginwrapper input {
