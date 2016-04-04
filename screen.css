@@ -38,7 +38,7 @@ header img{
   color: ghostwhite;
 }
 
-#loginwrapper input {
+#loginwrapper input ,#finances{
   color: white;
   display: block;
   margin: 1em 0;
