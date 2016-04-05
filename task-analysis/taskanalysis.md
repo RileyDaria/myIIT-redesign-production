@@ -5,7 +5,7 @@
 ---
 # Task
 
-Our task is to see the blance that you owe Illinois Tech and pay that balance off in full.
+Our task is to find the tuition balance that you owe Illinois Tech and pay that balance off in full.
 
 # Step 1
 
