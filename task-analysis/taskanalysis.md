@@ -3,6 +3,10 @@
 #### Dr. Stolley
 #### Project 3
 ---
+# Task
+
+Our task is to see the blance that you owe Illinois Tech and pay that balance off in full.
+
 # Step 1
 
 The user is prompted with the following welcome screen at IIT’s homepage.
