@@ -86,9 +86,11 @@ https://secure.touchnet.com/C20090_tsa/web/make_payment.jsp
 ![](10.PNG)
 
 *This is when Electonic Check Option was chosen
+
 ![](ElectronicCheck.JPG)
 
 *This is when CreditCard Option was chosen
+
 ![](CreditCard_1.JPG)
 
 --
