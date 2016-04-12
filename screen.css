@@ -13,11 +13,11 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 /*Base styles*/
 body {
   font-family: 'Futura', sans-serif;
+  font-size: 1.1em;
 }
 
 h1 {
   font-size: 3em;
-  text-align: center;
 }
 
 h2 {
@@ -27,11 +27,24 @@ h2 {
   margin-bottom: .5em;
 }
 
-/*Classes for layout*/
+span {
+  color: crimson;
+  font-size: 1.5em;
+}
+
+
+/*Classes and ids for layout*/
+#banner {
+  background-color: black;
+  color:ghostwhite;
+  padding: 1em;
+  text-align: center;
+}
+
+
 .wrapper {
   background-color: rgba(10,10,10, .4);
   padding: 2em;
-  border-radius: .5em;
 }
 
 .wrapper label {
@@ -57,7 +70,6 @@ h2 {
 
 .logo {
   font-family: arial, sans-serif;
-  
   font-size: 3em;
   margin-bottom: .25em;
   margin-bottom: .25em;
@@ -84,11 +96,12 @@ h2 {
 }
 
 .sections {
-    width: 100%;
-    height: auto;
-    padding: 1em 1em;
-    background: linear-gradient(to bottom, #45484d 0%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  }
+  width: 100%;
+  overflow: auto;
+  height: auto;
+  padding: 1em 1em;
+  background: linear-gradient(to bottom, #45484d 0%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
 
 
 .sections a {
@@ -116,6 +129,7 @@ h2 {
   .wrapper {
     margin: 2em;
     border: 1px solid;
+    border-radius: .5em;
   }
   
   .sections {
