@@ -99,6 +99,11 @@ h2 {
   text-decoration: none;
 }
 
+
+.sections a:hover {
+  color: red;
+}
+
 .tubewhite {
   background: url("images/tubewhite.jpg") no-repeat center center fixed;
   background-size: cover;
