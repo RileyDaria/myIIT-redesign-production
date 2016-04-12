@@ -12,15 +12,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 /*Base styles*/
 body {
-  font-family: sans-serif;
-}
-
-a {
-  display: block;
-  font-family: 'Century Schoolbook', sans-serif;
-  font-size: .85em;
-  line-height: 2em;
-  text-decoration: none;
+  font-family: 'Futura', sans-serif;
 }
 
 h1 {
@@ -31,6 +23,8 @@ h1 {
 h2 {
   font-size: 2em;
   font-weight: bold;
+  color: white;
+  margin-bottom: .5em;
 }
 
 /*Classes for layout*/
@@ -84,7 +78,7 @@ h2 {
   flex-flow: row wrap;
   justify-content: space-around;
   align-items: flex-end;
-  max-width: 50em;
+  max-width: 60em;
   height: auto;
   margin: 0 auto;
 }
@@ -93,10 +87,17 @@ h2 {
     width: 100%;
     height: auto;
     padding: 1em 1em;
-    background-color: rgba(45, 45, 45, .5);
-    font-family: 'Futura', sans-serif;
     background: linear-gradient(to bottom, #45484d 0%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   }
+
+
+.sections a {
+  display: block;
+  font-size: .85em;
+  line-height: 2em;
+  color: crimson;
+  text-decoration: none;
+}
 
 .tubewhite {
   background: url("images/tubewhite.jpg") no-repeat center center fixed;
