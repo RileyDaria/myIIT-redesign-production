@@ -8,6 +8,10 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   font-weight: bold;
 }
 
+h2 {
+  font-size: 1.5em;
+}
+
 #main-container{
   display:flex;
   flex-flow: row wrap;
