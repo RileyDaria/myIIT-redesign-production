@@ -13,9 +13,14 @@ a {
   text-decoration: none;
 }
 
+h2 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
 /*Classes for layout*/
 .wrapper {
-  background-color: rgba(10,10,10, .2);
+  background-color: rgba(10,10,10, .4);
   padding: 2em;
   border-radius: .5em;
 }
@@ -35,6 +40,8 @@ a {
 }
 
 /*Specific to certain pages*/
+
+/*Login*/
 .login {
   max-width: 40em;
 }
@@ -54,6 +61,15 @@ a {
 .citybackground {
   background: url("images/tube.jpg") no-repeat center center fixed;
   background-size: cover;
+}
+
+/*Portal Dashboard*/
+.module {
+  max-width: 25%;
+  background-color: rgba(10,10,10, .2);
+  margin: 2em 0em;;
+  padding: 2em;
+  border-radius: .5em;
 }
 
 /*For larger screens*/
