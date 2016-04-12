@@ -33,6 +33,7 @@ h2 {
     padding: 1em 1em;
     background-color: rgba(45, 45, 45, .5);
     font-family: 'Futura', sans-serif;
+    background: linear-gradient(to bottom, #45484d 0%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   }
 
 .tubewhite {
