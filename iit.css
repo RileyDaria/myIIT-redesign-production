@@ -8,13 +8,13 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   font-weight: bold;
 }
 
-h2 {
-  font-size: 1.5em;
+h1 {
+  font-size: 3em;
+  text-align: center;
 }
 
-.tubewhite {
-  background: url("images/tubewhite.jpg") no-repeat center center fixed;
-  background-size: cover;
+h2 {
+  font-size: 1.5em;
 }
 
 #main-container{
@@ -27,22 +27,7 @@ h2 {
   height: auto;
 }
 
-div.wrapper{
-  padding: .25em;
-}
-div.wrapper.login img{
-  width: 100%;
-  height: auto;
-
-}
-
-
-  div#main-container {
-  
-
-  }
-
-  .sections {
+.sections {
     align-self: flex-end;
     width: 35%;
     height: auto;
@@ -55,13 +40,10 @@ div.wrapper.login img{
 
   }
 
-  h1 {
-    font-weight: 500;
-    font-size: 1.25em;
-    text-align: center;
-    line-height: 1.5em;
-    color: #ffffff;
-  }
+.tubewhite {
+  background: url("images/tubewhite.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
 
   a {
     display: block;
@@ -89,4 +71,10 @@ div.wrapper.login img{
     color: rgb(0, 0, 100);
     text-decoration: underline;
   }
+
+@media screen and (min-width: 37.5em){
+
+
+
+
 }
