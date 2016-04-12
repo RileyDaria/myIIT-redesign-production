@@ -18,6 +18,8 @@ h2 {
   justify-content: space-around;
   align-items: flex-end;
   padding: .25em .5em;
+  width: 100%;
+  height: auto;
 }
 
 div.wrapper{
@@ -36,23 +38,13 @@ p{
   text-align: center;
   padding: .25em;
   margin: 1em auto .5em auto;
-  color: #000000;
+  color: white;
   text-shadow: 2px 2px 2px rgba(45, 45, 45, .75);;
 }
 
 
   div#main-container {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: flex-end;
-
-    background-image: url("images/iit.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
-    height: auto;
+  
 
   }
 
