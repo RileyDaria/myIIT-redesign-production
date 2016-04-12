@@ -108,14 +108,14 @@ span {
   display: block;
   font-size: .85em;
   line-height: 2em;
-  color: crimson;
+  color: skyblue;
   text-shadow: black 1px 1px;
   text-decoration: none;
 }
 
 
 .sections a:hover {
-  color: red;
+  color: limegreen;
 }
 
 .sections img {
