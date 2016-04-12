@@ -22,8 +22,9 @@ h2 {
   flex-flow: row wrap;
   justify-content: space-around;
   align-items: flex-end;
-  width: 100%;
+  max-width: 50em;
   height: auto;
+  margin: 0 auto;
 }
 
 .sections {
