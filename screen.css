@@ -141,6 +141,7 @@ span {
 }
 #payment_amount{
 	width:100%;
+	flex-direction: column;
 
 }
 .balance_nav{
