@@ -2,14 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no">
+  <link rel="stylesheet" href="screen.css">
   <title>myIllinoisTech</title>
- <!-- <link rel="stylesheet" href="screen.css">-->
   <style>
   /*red 990033
     light green CCCC99
 	dark green 666633
 	grey 
-	*/
+	
 body{
 	background-color:#F6F6F6;
 	}
@@ -41,27 +42,25 @@ body{
 	flex-direction: row;
 	 justify-content: space-between;
 }
-
+*/
 	
   </style>
 </head>
-<body>
-<div class = "main_header">
-  <h1 id="my">My</h1><h1 id="IIT">IIT</h1>
-  <div>Payment History</div>
-  <div>Payment Plan</div>
+<body class="tubewhite">
+  <div id="banner">
+    my<span>IllinoisTech</span><h1>Student Account</h1>
   </div>
     <div class = "wrapper">
 	
 	
-	<h1 class="headers">Student Account</h1>
-	<div id = "balance">
-	<div>Current Balance:</div>
+
+	<div class="sections">
+	<div >Current Balance:</div>
 	<div>$100</div>
 	<a href >Details</a>
 	<button>Pay</button>
-	</div>
-	<form action = "">
+	
+	<form action="payment.html">
 		<div>Select Payment Amount:</div>
 		<input type ="radio"/>Full Amount Due
 		<input type ="radio"/>Custom Amount<input type="text"/>
@@ -70,11 +69,11 @@ body{
 		<div>Memo <input type="textarea"/>
 		</div>
 	
-	<button>Back</button>
-	<button>Continue</button>
+	<button onclick="window.location.href='portal.html'">Back</button>
+	<input type="submit" name="continue" value="Continue">
 	
 	</form>
-	
+	</div>
   </div>
 </body>
 </html>

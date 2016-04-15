@@ -51,7 +51,7 @@ span {
   color: ghostwhite;
 }
 
-.wrapper input {
+.wrapper input,button {
   color: white;
   display: block;
   margin: 1em 0;
