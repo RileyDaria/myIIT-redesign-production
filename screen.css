@@ -138,6 +138,7 @@ span {
 	max-width:90%;
 	height:auto;
 	color:ghostwhite;
+	padding-bottom: 3em;
 }
 #payment_amount{
 	width:100%;
@@ -154,10 +155,11 @@ span {
 	flex-direction:row;
 	justify-content:space-between;
 	align-items:baseline;
+
 }
 #btn_pay{
 	width:20em;
-	float:right;
+	float:left;
 	
 }
   
