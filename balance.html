@@ -12,10 +12,11 @@
   </div>
 
 	<div class="wrapper" id="balance_page">
-	<!--<div class="balance_nav">
-	<div><input type="url" value="Student Account"/></div>
-	<div><input type="url" value="Payment History"/></div>
-	<div><input type="url" value="Payment Plans"/></div>
+	<div class="balance_nav">
+	<!--<div id="student_account"><a href >Student Account</a></div>
+	<div><a href >Payment History</a></div>
+	<div><a href >Payment Plans</a></div>
+	<div><a href >Bill Statements</a></div>
 	</div>
 	-->
 	<h2>Current Balance:</h2>
@@ -34,16 +35,16 @@
 		<div><h3>Select Payment Amount:</h3>
 		</div>
 		<div>
-		<input type ="radio" value="full_amount"/>Full Amount Due
+		<input type ="radio" name="amount" value="full_amount"/>Full Amount Due
 		</div>
 		<div>
-		<input type ="radio"/>Custom Amount<input type="text"/>
+		<input type ="radio" name="amount"/> Custom Amount <input type="text"/>
 		</div>
 		<div><label>Payment Date <input type="date"/></label>
 		</div>
 		<div>
 		<label>Memo</label>
-		<input type="textarea"/>
+		<input id="memo" type="textarea"/>
 		</div>
 	
 	<input type="button" onclick="location.href='portal.html';" value="Back" />
