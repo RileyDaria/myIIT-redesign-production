@@ -1,19 +1,18 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no">
-	
-  <title> myIllinoisTech </title>
-	</head>
-</html>
-
-<body>
-	<div id="my" class ="main_header">
-		<h1> myIIT </h1>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no">
+  <link rel="stylesheet" href="screen.css">
+  <title>myIllinoisTech</title>
+</head>
+<body class="tubewhite">
+  <div id="banner">
+    my<span>IllinoisTech</span><h1>Payment Information</h1>
+  </div>
+  <div class="wrapper" id="payment_page">
 		<h2> Account Payment Form </h2>
-	</div>
+	
 <!-- Box is created around tags -->
 <!--Student information starts below-->
   <fieldset>
@@ -95,8 +94,9 @@
   </fieldset>
 
        <!-- Sending information and sumbitting form -->
-  <input type="submit" value ="Submit Payment">
-
+	<input type="button" onclick="location.href='balance.html';" value="Back" />
+	<input type="button" onclick="location.href='receipt.html';" value="Submit Payment" />
+</div>
 </body>
 
 </html>
