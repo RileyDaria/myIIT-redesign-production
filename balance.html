@@ -50,30 +50,47 @@ body{
   <div id="banner">
     my<span>IllinoisTech</span><h1>Student Account</h1>
   </div>
-    <div class = "wrapper">
+    
 	
 	
 
-	<div class="sections">
-	<div >Current Balance:</div>
+	<div class="sections wrapper">
+	
+	<h2>Current Balance:</h2>
 	<div>$100</div>
 	<a href >Details</a>
-	<button>Pay</button>
+	<button id="btn_pay">Pay</button>
 	
-	<form action="payment.html">
-		<div>Select Payment Amount:</div>
+	<form id="payment_amount">
+	<fieldset>
+	
+		<legend>Select Payment Amount:</legend>
 		<input type ="radio"/>Full Amount Due
 		<input type ="radio"/>Custom Amount<input type="text"/>
-		<div>Payment Date <input type="date"/>
-		</div>
-		<div>Memo <input type="textarea"/>
+		<label>Payment Date <input type="date"/></label>
+		
+		<div>
+		<label>Memo</label>
+		<input type="textarea"/>
 		</div>
 	
-	<button onclick="window.location.href='portal.html'">Back</button>
-	<input type="submit" name="continue" value="Continue">
+	<input type="button" onclick="location.href='portal.html';" value="Back" />
+	<input type="button" onclick="location.href='payment.html';" value="Continue" />
 	
+	
+	</fieldset>
 	</form>
 	</div>
-  </div>
+  
 </body>
+<script>
+	var pay = document.getElementById('btn_pay');
+	
+	pay.addEventListener("click", function(){
+	
+	document.getElementById('payment_amount').style.display = "flex";
+	
+	
+	});
+</script>
 </html>
