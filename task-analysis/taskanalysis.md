@@ -32,7 +32,7 @@ http://my.iit.edu/render.userLayoutRootNode.uP?uP_root=root
 ---
 # Step 4
 
-‘Manage My Student Account’ is clickd.
+‘Manage My Student Account’ is clicked.
 http://my.iit.edu/tag.5c9c21dfc34d8ac8.render.userLayoutRootNode.uP?uP_root=root&amp;uP_sparam=activeTab&amp;activeTab=u12l1s22&amp;uP_tparam=frm&amp;frm=
 ![](4.PNG)
 
@@ -70,14 +70,61 @@ https://secure.touchnet.com/C20090_tsa/tapp?tapp-stoken=Jtqsfc7UmHf&amp;Navigate
 # Step 9
 
 ‘Payment method’ is chosen and then the user clicks 'Select'
+There are 3 options for the payment:
+
+* Primary Checking
+* New Evectronic Check(Checking/Saving)
+* CreditCard via Paypath
 https://secure.touchnet.com/C20090_tsa/web/make_payment.jsp
 ![](9.PNG)
 
 ---
 # Step 10
-
-Payment details and confirmation are displayed to user and then the user clicks 'Submit Payment' which displays a payment receipt.
+Payment details and confirmation are displayed to user and then the user clicks 'Submit Payment' which displays a payment receipt. 
+* This is a screenchot when Primary Checking Option was chosen
 https://secure.touchnet.com/C20090_tsa/web/make_payment.jsp
 ![](10.PNG)
 
+*This is when Electonic Check Option was chosen
+
+![](ElectronicCheck.JPG)
+
+*This is when CreditCard Option was chosen
+
+![](CreditCard_1.JPG)
+
+--
+# Step 11
+If the user chose Primary Checking Option, after clicking Submit Payment Button he/she is redirected to the receipt page
+![](Receipt.JPG)
+
+--
+
+
+--
+# Step 12 (for credit cards only)
+If the user chose CreditCard Option he/she will be redirected to another 3rd party web-site PayPath
+![](CreditCard_PayPath.JPG)
+
+--
+# Step 13 (for credit cards only)
+After the "Continue" button is clicked it goes to 
+payment amount conformation page
+![] (CreditCard_PayPath_1.JPG)
+
 ---
+# Step 14 (for credit cards only)
+After the "Continue" button is clicked, it goes to the from with credit card information
+![] (CreditCard_PayPath_2.JPG)
+
+--
+# Step 15 (for credit cards only)
+The user clicks "Continue" button, is goes to conformation page(dont have a screenshot becasue the valid entry of the creditcard info is required)
+
+--
+# Step 16 (for credit cards only)
+The receipt page is displayed
+
+--
+
+
