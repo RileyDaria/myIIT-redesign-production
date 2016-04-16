@@ -31,6 +31,11 @@ span {
   color: crimson;
   font-size: 1.5em;
 }
+fieldset{
+	border: 1px solid white;
+	padding: .5em;
+	border-radius: .5em;
+}
 
 
 /*Classes and ids for layout*/
@@ -39,9 +44,6 @@ span {
   color:ghostwhite;
   padding: 1em;
   text-align: center;
-}
-#payment_amount{
-	display: none;
 }
 
 .wrapper {
@@ -140,7 +142,9 @@ span {
 	color:ghostwhite;
 	padding-bottom: 4em;
 }
+
 #payment_amount{
+	display: none;
 	width:100%;
 	flex-direction: column;
 
@@ -171,6 +175,21 @@ input #payment_amount.wrapper{
 	display: inline;
 }
 
+/* Payment */
+
+#payment_page{
+	
+}
+#payment_page.wrapper{
+background: linear-gradient(to bottom, #45484d 0%,rgba(0,0,0, .6)100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+}
+
+/* Receipt */
+#receipt_page.wrapper{
+background: linear-gradient(to bottom, #45484d 0%,rgba(0,0,0, .6)100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+}
 /*For larger screens*/
 @media screen and (min-width: 21.25em) {
   .sections img {
