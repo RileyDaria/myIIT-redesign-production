@@ -57,7 +57,7 @@
      </select>
 	</fieldset>
 	</form>
-    <!--Payment information starts below-->
+    <!--Payment information for Checking/Savings Account starts below-->
 	<fieldset>
     <legend>Payment Information</legend>
      <label for="form-date"> Payment Date:   </label>
@@ -82,6 +82,16 @@
 		 <label for="form-email"> Email Address: </label>
    	   <input type="text" name="email_field" id="form-email" value="example@hawk.iit.edu" maxlength="50"/>
 	   
+  </fieldset>
+<!--Payment information for credit cards starts below-->
+<fieldset>
+    <legend>Payment Information</legend>
+     <label for="form-date"> Payment Date:   </label>
+       <input type="date" name="date_field" id= "form-date"/>
+
+     <label for="form-amount"> Payment Amount: </label>
+       <input type="text" name="amount_field" class= "form-amount"  maxlength="50"/>
+	   
 	   <label for="form-card"> Cardholder Name: </label>
        <input type="text" name="card_field" id= "form-card"/>
 	   
@@ -94,8 +104,10 @@
 	   <label for="form-cvv"> CVV: </label>
        <input type="text" name="cvv_field" id= "form-cvv"/>
 	   
+	   <label for="form-email"> Email Address: </label>
+   	   <input type="text" name="email_field" id="form-email" value="example@hawk.iit.edu" maxlength="50"/>
+	   
   </fieldset>
-
 
 <!-- Reviewing details starts below-->
   <fieldset>
