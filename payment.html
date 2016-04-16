@@ -11,44 +11,46 @@
     my<span>IllinoisTech</span><h1>Payment Information</h1>
   </div>
   <div class="wrapper" id="payment_page">
-		<form>
-		<h2>Account Payment</h2>
+		<form id="select_payment">
+		<fieldset>
+		<legend><h2>Account Payment</h2></legend>
 		<div>Select Payment Method</div>
-		<div>Payment Amount:  $500.00</div>
-		<div>Payment Method:
-		     <select name="method">
-       
-       <option value="Checking/Savings"> Checking/Savings </option>
-       <option value="Credit_Card"> Credit Card  </option>
-     </select>
+			<label for="p_amount">Payment Amount:</label>
+			<div id="p_amount">$500.00
 		</div>
+		<div>Payment Method:
+		    <select name="method">
+				<option value="Checking/Savings"> Checking/Savings </option>
+				<option value="Credit_Card"> Credit Card  </option>
+			</select>
+		</div>
+	</fieldset>
 	</form>
+	
 <!-- Box is created around tags -->
 <!--Student information starts below-->
+  <form id="student_info">
   <fieldset>
+	<legend>Student Information</legend>
+		<label for="form-name"> Full Name: </label>  
+			<input type="text" name="_name_field" id= "form-name"/>
+     
+		<label> Billing Address: 
+			<input type="text" name="address_field" id= "form-address"/>
+		</label>
 
-	  <legend>Student Information</legend>
+		<label> City:
+			<input type="text" name="city_field" id= "form-city"/>
+		</label>
 
-     <label> Full Name:   
-       <input type="text" name="_name_field" id= "form-name"/>
-     </label>
-
-     <label> Billing Address: 
-       <input type="text" name="address_field" id= "form-address"/>
-     </label>
-
-     <label> City:
-   	   <input type="text" name="city_field" id= "form-city"/>
-     </label>
-
-	   <label> State:
-   	   <input type="text" name="state_field" id= "form-state" maxlength="2"/>
+		<label> State:
+			<input type="text" name="state_field" id= "form-state" maxlength="2"/>
      </label>
 
 	   <label> Postal Code:
    	   <input type="text" name="postal_field" id= "form-postal" maxlength="5"/>
      </label>
-
+	
   <!-- Drop down menu implemented for semester -->
      <p> Semester </p>
 	   <select name="sem_field">
@@ -56,8 +58,8 @@
          <option value="Fall '15"> Fall 2015 </option>
          <option value="Spring '16"> Spring 2016 </option>
      </select>
-  </fieldset>
-
+	</fieldset>
+	</form>
     <!--Payment information starts below-->
 	<fieldset>
     <legend>Payment Information</legend>
@@ -104,10 +106,11 @@
   </fieldset>
 
        <!-- Sending information and sumbitting form -->
-	<input type="button" onclick="location.href='balance.html';" value="Back" />
+	<input type="button" onclick="location.href='balance.html';" value="Back" class="back_to_balance" />
 	<input type="button" onclick="location.href='receipt.html';" value="Submit Payment" />
 </div>
 </body>
+
 
 </html>
 

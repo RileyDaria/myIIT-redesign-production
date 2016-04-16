@@ -36,7 +36,12 @@ fieldset{
 	padding: .5em;
 	border-radius: .5em;
 }
-
+select{
+	background-color: black;
+	color:ghostwhite;
+	padding: 0.5em;
+	border-radius: .5em;
+}
 
 /*Classes and ids for layout*/
 #banner {
@@ -178,11 +183,17 @@ input #payment_amount.wrapper{
 /* Payment */
 
 #payment_page{
-	
+	color:ghostwhite;
 }
 #payment_page.wrapper{
 background: linear-gradient(to bottom, #45484d 0%,rgba(0,0,0, .6)100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 
+}
+#select_payment{
+	display:flex;
+	flex-direction:column;
+	margin: 1em auto;
+	
 }
 
 /* Receipt */
