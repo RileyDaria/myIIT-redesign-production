@@ -40,7 +40,9 @@ span {
   padding: 1em;
   text-align: center;
 }
-
+#payment_amount{
+	display: none;
+}
 
 .wrapper {
   background-color: rgba(10,10,10, .4);
@@ -51,9 +53,9 @@ span {
   color: ghostwhite;
 }
 
-.wrapper input {
+.wrapper input,button {
   color: white;
-  display: block;
+ /* display: block;*/
   margin: 1em 0;
   background-color: transparent;
   border: 1px solid white;
@@ -66,6 +68,9 @@ span {
 /*Login*/
 .login {
   max-width: 40em;
+}
+.login input{
+	display:block;
 }
 
 .logo {
@@ -123,9 +128,47 @@ span {
 }
 
 
+
 .tubewhite {
   background: url("images/tubewhite.jpg") no-repeat center center fixed;
   background-size: cover;
+}
+/*Balance Page*/
+#balance_page{
+	max-width:90%;
+	height:auto;
+	color:ghostwhite;
+	padding-bottom: 4em;
+}
+#payment_amount{
+	width:100%;
+	flex-direction: column;
+
+}
+.balance_nav{
+	display:flex;
+	flex-direction: column;
+	justify-content: space-between;
+  }
+.display_balance{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	align-items:baseline;
+
+}
+#btn_pay{
+	width:20em;
+	float:left;
+	
+}
+  
+#balance_page.wrapper{
+background: linear-gradient(to bottom, #45484d 0%,rgba(0,0,0, .6)100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+}
+input #payment_amount.wrapper{
+	display: inline;
 }
 
 /*For larger screens*/
@@ -135,6 +178,9 @@ span {
     position: relative;
     top: 1em;
     display: inline;
+  }
+  .balance_nav{
+	flex-direction: row;
   }
 }
 
@@ -158,6 +204,10 @@ span {
 
     font-family: 'Futura', sans-serif;
 
+  }
+
+  .balance_nav{
+	flex-direction: row;
   }
   
 }
