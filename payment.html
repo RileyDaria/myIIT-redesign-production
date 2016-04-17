@@ -11,19 +11,25 @@
     my<span>IllinoisTech</span><h1>Payment Information</h1>
   </div>
   <div class="wrapper" id="payment_page">
+  <h2>Account Payment</h2>
 		<form id="select_payment">
 		<fieldset>
-		<legend><h2>Account Payment</h2></legend>
-		<div>Select Payment Method</div>
-			<label for="p_amount">Payment Amount:</label>
-			<div id="p_amount">$500.00
-		</div>
-		<div>Payment Method:
-		    <select name="method">
-				<option value="Checking/Savings"> Checking/Savings </option>
-				<option value="Credit_Card"> Credit Card  </option>
+		<legend>Select Payment Method</legend>
+		
+		<p>	<label for="p_amount">Payment Amount:</label>
+		<input type="text" value="$500.00"/>
+		
+			
+		</p>
+		<p>
+		<label for="p_method">Payment Method:</label>
+		    <select name="method" id="p_method">
+			    <option  selected value="default"> -- select an option -- </option>
+				
+				<option value="c_c"> Credit Card  </option>
+				<option value="c_s"> Checking/Savings </option>
 			</select>
-		</div>
+		</p>
 	</fieldset>
 	</form>
 	
@@ -32,81 +38,105 @@
   <form id="student_info">
   <fieldset>
 	<legend>Student Information</legend>
+		<p>
 		<label for="form-name"> Full Name: </label>  
 			<input type="text" name="_name_field" id= "form-name"/>
-     
+		</p>
+		<p>
 		<label for="form-address"> Billing Address: </label>
 			<input type="text" name="address_field" id= "form-address"/>
-
+		</p>
+		<p>
 		<label for="form-city"> City:</label>
 			<input type="text" name="city_field" id= "form-city"/>
-			
+		
+		</p>
+		<p>
 		<label for="form-state"> State: </label>
 			<input type="text" name="state_field" id= "form-state" maxlength="2"/>
-
+		
+		</p>
+		<p>
 	   <label for="form-postal"> Postal Code: </label>
    	   <input type="text" name="postal_field" id= "form-postal" maxlength="5"/>
-	
+		</p>
+		<p>
+		 <label for="form-email"> Email Address: </label>
+   	   <input type="text" name="email_field" id="form-email" value="example@hawk.iit.edu" maxlength="50"/>
+		</p>
   <!-- Drop down menu implemented for semester -->
-     <p> Semester </p>
+     <p><label for="semester">Semester </label>
 	   <select name="sem_field">
-         <option selected="selected" value="sem"> </option>
          <option value="Fall '15"> Fall 2015 </option>
          <option value="Spring '16"> Spring 2016 </option>
      </select>
+	 </p>
+	 
 	</fieldset>
 	</form>
     <!--Payment information for Checking/Savings starts below-->
+	<form id="form_account">
 	<fieldset>
     <legend>Payment Information</legend>
-     <label for="form-date"> Payment Date: </label>
+     <!--<label for="form-date"> Payment Date: </label>
        <input type="date" name="date_field" id= "form-date"/>
 
      <label for="form-amount"> Payment Amount: </label>
        <input type="text" name="amount_field" class= "form-amount"  maxlength="50"/>
-	
-     <p> Account Type: </p>
-     <select name="account_field">
-       <option selected="selected" value="acc">  </option>
-       <option value="Checking"> Checking </option>
-       <option value="Savings"> Savings  </option>
-     </select>
+	</input>
 
+	-->
+	<p>
      <label for="form-routing"> Routing Number: </label>
-       <input type="text" name="routing_field" id= "form-routing"  maxlength="9"/>
-	
+       <input type="text" name="routing_field" id= "form-routing" />
+	</p>
+	<p>
 	   <label for="form-number"> Account Number: </label>
-       <input type="text" name="number_field" id= "form-number"  maxlength="12"/>
+       <input type="text" name="number_field" id= "form-number" />
+	</p>
+	<p>
+	<label for="account"> Account Type:  </label>
+     <select name="account_field">
+		<option value="Checking"> Checking </option>
+		<option value="Savings"> Savings  </option>
+     </select>
+	</p>
 
-		 <label for="form-email"> Email Address: </label>
-   	   <input type="text" name="email_field" id="form-email" value="example@hawk.iit.edu" maxlength="50"/>
   </fieldset>
+  </form>
 <!--Payment information for Credit cards starts below-->
+<form id="form_cc">
 <fieldset>
     <legend>Payment Information</legend>
-     <label for="form-date"> Payment Date: </label>
+     <!--<label for="form-date"> Payment Date: </label>
        <input type="date" name="date_field" id= "form-date"/>
 
      <label for="form-amount"> Payment Amount: </label>
        <input type="text" name="amount_field" class= "form-amount"  maxlength="50"/>
-
+-->	<p>
      <label for="form-card"> Cardholder Name: </label>
        <input type="text" name="card_field" id= "form-card"  maxlength="50"/>
-	
+	</p>
+	<p>
 	   <label for="form-cnumber"> Card Number: </label>
        <input type="text" name="cnumber_field" id= "form-cnumber"  maxlength="16"/>
-	   
+	</p><p>   
 	   <label for="form-expiration"> Card Expiration: </label>
        <input type="text" name="expiration_field" id= "form-expiration"  maxlength="5"/>
-	   
+	</p><p>   
 	   <label for="form-CVV"> CVV: </label>
        <input type="text" name="cvv_field" id= "form-cvv"  maxlength="3"/>
-
+	</p><p>
 		 <label for="form-email"> Email Address: </label>
    	   <input type="text" name="email_field" id="form-email" value="example@hawk.iit.edu" maxlength="50"/>
+  </p>
   </fieldset>
-
+</form>
+	<input type="button" onclick="location.href='balance.html';" value="Back" class="back_to_balance" />
+	<input type="button" value="Continue" />
+	
 <!-- Reviewing details starts below-->
+  <form>
   <fieldset>
     <legend>Review Payment Information</legend>
 
@@ -116,13 +146,27 @@
     <label for="form-type"> Payment Type: <label>
    	  <input type="text" name="type_field" id="form-type" value="Checking/Savings or CC" maxlength="50"/>
   </fieldset>
-
+	</form>
        <!-- Sending information and sumbitting form -->
 	<input type="button" onclick="location.href='balance.html';" value="Back" class="back_to_balance" />
 	<input type="button" onclick="location.href='receipt.html';" value="Submit Payment" />
 </div>
 </body>
+<script>
+	var method = document.getElementById('p_method');
+	var account = document.getElementById('form_account');
+	var cc = document.getElementById('form_cc');	
 
+	if (method.value = "c_s"){
+	account.style.display = "block";	
+	}
+	else{
+	cc.style.display = "block";
+	}
+	
+	
+
+</script>
 
 </html>
 
