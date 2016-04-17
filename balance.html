@@ -26,41 +26,13 @@
 		</div>
 		
 	</div>
-	<button id="btn_pay">Pay</button>
-		
-	
-<!--	<form id="payment_amount">
-	<fieldset class="p_amount">
-	
-		<legend><h3>Select Payment Amount</h3></legend>
-		
-		
-		<div class="labelsdiv">	
-			<label for="full_amount">Full Amount Due</label>
-		
-		
-			
-			<label for="custom_amount">Custom Amount</label>
-		
-		
-			<label for="date">Payment Date </label>
-	
-			<label for="memo">Memo</label>
-        </div>
-			
-		<div class="inputsdiv">
-		  <input type ="radio" name="amount" id="full_amount" value="full_amount"/>
-		  <input type="text" id="custom_amount"/>
-		  <input type="date" id="date"/>
-          <textarea cols="20" rows=""></textarea>
-		</div>
--->
+	<button id="btn_pay" class="next_buttons buttons">Pay</button>
+	<button class="back_buttons buttons" id="balance_back" onclick="location.href='portal.html';" >Back</button>
+
 	<form id="payment_amount">
 	<fieldset >
 	
 		<legend><h3>Select Payment Amount</h3></legend>
-		
-		
 		<p>
 			<label for="full_amount">
 				<input type ="radio" name="amount"  value="full_amount"/>
@@ -76,11 +48,11 @@
 		
 		<p>
 			<label for="date">Payment Date </label>
-			<input type="date" id="date"/>
+			<input type="date" id="date" class="input"/>
 		</p>
 		<p>
 			<label for="memo">Memo</label>
-			<textarea cols="20" rows=""></textarea>
+			<textarea cols="20" rows="" class="input"></textarea>
         </p>
 			
 	<!--
@@ -90,9 +62,9 @@
           
 	
 		
-	<input type="button" class="back_buttons" id="balance_back" onclick="location.href='portal.html';" value="Back" />
+	<button class="back_buttons buttons" id="cancel_amount">Cancel</button>
 	
-	<input type="button" class="next_buttons" id="balance_continue" onclick="location.href='payment.html';" value="Continue" />
+	<input type="button" class="next_buttons buttons" id="balance_continue" onclick="location.href='payment.html';" value="Continue" />
 	
 	
 	</fieldset>
@@ -102,10 +74,17 @@
 </body>
 <script>
 	var pay = document.getElementById('btn_pay');
+	var cancel = document.getElementById('cancel_amount');
 	
 	pay.addEventListener("click", function(){
 	
 	document.getElementById('payment_amount').style.display = "inline-block";
+	
+	
+	});
+	cancel.addEventListener("click", function(){
+	
+	document.getElementById('payment_amount').style.display = "none";
 	
 	
 	});
