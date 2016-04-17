@@ -166,37 +166,11 @@ legend{
 	padding-bottom: 4em;
 }
 
-#balance_page .labelsdiv {
-  display: inline-block;
-  max-width: 100%;
-}
-
-/*#balance_page label {
- display: block;
-  margin-bottom: 1.95em;
-  max-width: 100%;
-}*/
-
-#balance_page .inputsdiv {
- display: inline-block;
- float: right;
-  max-width: 100%;
-}
-
-.inputsdiv input, radio {
-  display: block;
-  max-width: 100%;
-}
-
 #payment_amount{
 	display: none;
 	width: 100%;
 }
 
-fieldset {
-  border: 0px solid white;
-  
-}
 
 textarea{
 	border-radius: 0.5em;
@@ -210,18 +184,20 @@ textarea{
 
 }
 
-#btn_pay{
-	min-width:30%;
-	float:right;
+.buttons{
+	min-width:20%;
+
 }
 
 #payment_amount input{
 	margin-bottom:0;
 }
-#full_amount{
-	background-color: rgba(255, 255, 255, 0.5);
+#full_amount,#amount_method,#p_type,#payment_a{
+	background-color: rgba(255, 255, 255, 0.2);
 }
-
+.input{
+	max-width:12.5em;
+}
 
 
 /*Payment Page*/
@@ -229,6 +205,7 @@ textarea{
 #payment_page{
   color:ghostwhite;
   max-width: 40em;
+  padding-bottom:4em;
   
 }
 
@@ -241,7 +218,7 @@ form p label{
 	text-align: left;
 	
 }
-#form_account,#form_cc{
+#form_account,#form_cc, #student_info,#review{
 	display:none;
 }
 
