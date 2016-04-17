@@ -35,18 +35,21 @@
 		<label for="form-name"> Full Name: </label>  
 			<input type="text" name="_name_field" id= "form-name"/>
      
-		<label for="form-address"> Billing Address: </label>
+		<label> Billing Address: 
 			<input type="text" name="address_field" id= "form-address"/>
-		
+		</label>
 
-		<label for="form-city"> City: </label>
+		<label> City:
 			<input type="text" name="city_field" id= "form-city"/>
+		</label>
 
-		<label for="form-state"> State: </label>
+		<label> State:
 			<input type="text" name="state_field" id= "form-state" maxlength="2"/>
+     </label>
 
-	   <label for="form-postal"> Postal Code: </label>
+	   <label> Postal Code:
    	   <input type="text" name="postal_field" id= "form-postal" maxlength="5"/>
+     </label>
 	
   <!-- Drop down menu implemented for semester -->
      <p> Semester </p>
@@ -57,14 +60,16 @@
      </select>
 	</fieldset>
 	</form>
-    <!--Payment information for Checking/Savings Account starts below-->
+    <!--Payment information starts below-->
 	<fieldset>
     <legend>Payment Information</legend>
-     <label for="form-date"> Payment Date:   </label>
+     <label> Payment Date:   
        <input type="date" name="date_field" id= "form-date"/>
+     </label>
 
-     <label for="form-amount"> Payment Amount: </label>
+     <label> Payment Amount: 
        <input type="text" name="amount_field" class= "form-amount"  maxlength="50"/>
+     </label>
 	
      <p> Account Type: </p>
      <select name="account_field">
@@ -73,51 +78,31 @@
        <option value="Savings"> Savings  </option>
      </select>
 
-     <label for="form-routing"> Routing Number: </label>
+     <label> Routing Number:
        <input type="text" name="routing_field" id= "form-routing"  maxlength="9"/>
+     </label>
 	
-	   <label for="form-number"> Account Number: </label>
+	   <label> Account Number:
        <input type="text" name="number_field" id= "form-number"  maxlength="12"/>
+     </label>
 
-		 <label for="form-email"> Email Address: </label>
+		 <label> Email Address:
    	   <input type="text" name="email_field" id="form-email" value="example@hawk.iit.edu" maxlength="50"/>
-	   
+     </label>
   </fieldset>
-<!--Payment information for credit cards starts below-->
-<fieldset>
-    <legend>Payment Information</legend>
-     <label for="form-date"> Payment Date:   </label>
-       <input type="date" name="date_field" id= "form-date"/>
 
-     <label for="form-amount"> Payment Amount: </label>
-       <input type="text" name="amount_field" class= "form-amount"  maxlength="50"/>
-	   
-	   <label for="form-card"> Cardholder Name: </label>
-       <input type="text" name="card_field" id= "form-card"/>
-	   
-	   <label for="form-cnumber"> Card Number: </label>
-       <input type="text" name="cnumber_field" id= "form-cnumber" maxlength="16"/>
-	   
-	   <label for="form-expiration"> Card Expiration: </label>
-       <input type="text" name="expiration_field" id= "form-expiration"/>
-	   
-	   <label for="form-cvv"> CVV: </label>
-       <input type="text" name="cvv_field" id= "form-cvv"/>
-	   
-	   <label for="form-email"> Email Address: </label>
-   	   <input type="text" name="email_field" id="form-email" value="example@hawk.iit.edu" maxlength="50"/>
-	   
-  </fieldset>
 
 <!-- Reviewing details starts below-->
   <fieldset>
     <legend>Review Payment Information</legend>
 
-    <label for="form-amount"> Payment Amount: </label>
+    <label> Payment Amount:
       <input type="text" name="amount_field" class= "form-amount" value ="101.00"/>
+    </label>
 
-    <label for="form-type"> Payment Type: </label>
-   	  <input type="text" name="type_field" id="form-type" value="Checking/Savings or CC" maxlength="50"/>
+    <label> Payment Type:
+   	  <input type="text" name="type_field" id="form-type" value="Checking or Savings" maxlength="50"/>
+    </label>
   </fieldset>
 
        <!-- Sending information and sumbitting form -->

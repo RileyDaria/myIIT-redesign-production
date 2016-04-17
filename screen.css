@@ -26,6 +26,9 @@ h2 {
   color: white;
   margin-bottom: .5em;
 }
+h3 {
+	font-weight: bold;
+}
 
 span {
   color: crimson;
@@ -37,10 +40,14 @@ fieldset{
 	border-radius: .5em;
 }
 select{
-	background-color: black;
+	background-color: rgba(10,10,10, .1) ;
 	color:ghostwhite;
 	padding: 0.5em;
 	border-radius: .5em;
+}
+legend{
+	text-align:center;
+	padding:1em 0;
 }
 
 /*Classes and ids for layout*/
@@ -142,23 +149,28 @@ select{
 }
 /*Balance Page*/
 #balance_page{
-	max-width:90%;
 	height:auto;
 	color:ghostwhite;
 	padding-bottom: 4em;
+	margin:0.5em;
+	border-radius: .5em;
+	
 }
 
 #payment_amount{
 	display: none;
 	width:100%;
-	flex-direction: column;
 
 }
-.balance_nav{
-	display:flex;
-	flex-direction: column;
-	justify-content: space-between;
-  }
+#payment_amount label{
+	float:left;
+	width:25%;
+	text-align:left;
+}
+#payment_amount button{
+	float:left;
+}
+
 .display_balance{
 	display:flex;
 	flex-direction:row;
@@ -167,8 +179,8 @@ select{
 
 }
 #btn_pay{
-	width:20em;
-	float:left;
+	min-width:30%;
+	float:right;
 	
 }
   
@@ -177,10 +189,10 @@ background: linear-gradient(to bottom, #45484d 0%,rgba(0,0,0, .6)100%); /* W3C, 
 
 }
 input #payment_amount.wrapper{
-	display: inline;
+	/*display: inline;*/
 }
 
-/* Payment */
+/*Payment Page*/
 
 #payment_page{
 	color:ghostwhite;
@@ -209,9 +221,14 @@ background: linear-gradient(to bottom, #45484d 0%,rgba(0,0,0, .6)100%); /* W3C, 
     top: 1em;
     display: inline;
   }
-  .balance_nav{
-	flex-direction: row;
+  #balance_page{
+	width:70%; 
+	margin: 1em auto;
+
+   
+
   }
+
 }
 
 
@@ -235,9 +252,10 @@ background: linear-gradient(to bottom, #45484d 0%,rgba(0,0,0, .6)100%); /* W3C, 
     font-family: 'Futura', sans-serif;
 
   }
+  #balance_page{
+	width:70%; 
+	margin: 1em auto;
 
-  .balance_nav{
-	flex-direction: row;
   }
   
 }
