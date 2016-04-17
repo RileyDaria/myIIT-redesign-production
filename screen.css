@@ -46,8 +46,8 @@ select{
 	border-radius: .5em;
 }
 legend{
-	text-align:center;
-	padding:1em 0;
+	text-align: center;
+	padding: 1em 0;
 }
 
 /*Classes and ids for layout*/
@@ -59,7 +59,7 @@ legend{
 }
 
 .wrapper {
-  background-color: rgba(10,10,10, .4);
+  background-color: rgba(10,10,10, .55);
   padding: 2em;
 }
 
@@ -67,23 +67,27 @@ legend{
   color: ghostwhite;
 }
 
-.wrapper input,button {
+.wrapper input, button {
   color: white;
- /* display: block;*/
-  margin: 1em 0;
+  display: inline-block;
   background-color: transparent;
   border: 1px solid white;
   padding: .5em;
   border-radius: .5em;
+  margin-bottom: 1.5em;
+  margin-top: .5em;
 }
+
 
 /*Specific to certain pages*/
 
 /*Login*/
+
 .login {
   max-width: 40em;
 }
-.login input{
+
+.login input, button{
 	display:block;
 }
 
@@ -153,14 +157,13 @@ legend{
   background: url("images/tubewhite.jpg") no-repeat center center fixed;
   background-size: cover;
 }
-/*Balance Page*/
+
+/*Balance Page***********/
 #balance_page{
-	height:auto;
+	max-width: 40em;
 	color:ghostwhite;
 	padding-bottom: 4em;
 	margin:0.5em;
-	border-radius: .5em;
-	
 }
 
 #payment_amount{
@@ -190,12 +193,12 @@ legend{
 	
 }
   
-#balance_page.wrapper{
-background: linear-gradient(to bottom, #45484d 0%,rgba(0,0,0, .6)100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-
-}
 input #payment_amount.wrapper{
 	/*display: inline;*/
+}
+
+.labelandinput {
+  margin: 1em 0;
 }
 
 /*Payment Page*/
