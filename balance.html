@@ -29,7 +29,7 @@
 	<button id="btn_pay">Pay</button>
 		
 	
-	<form id="payment_amount">
+<!--	<form id="payment_amount">
 	<fieldset class="p_amount">
 	
 		<legend><h3>Select Payment Amount</h3></legend>
@@ -54,10 +54,45 @@
 		  <input type="date" id="date"/>
           <textarea cols="20" rows=""></textarea>
 		</div>
+-->
+	<form id="payment_amount">
+	<fieldset >
 	
-	<input type="button" class="balance_button" id="balance_back" onclick="location.href='portal.html';" value="Back" />
+		<legend><h3>Select Payment Amount</h3></legend>
+		
+		
+		<p>
+			<label for="full_amount">
+				<input type ="radio" name="amount"  value="full_amount"/>
+			Full Amount Due</label>
+			<input type="text" readonly id="full_amount" value="$1000.00"/>
+		</p>
+		<p>
+			<label for="custom_amount">
+			<input type ="radio" name="amount" id="custom_amount" value="custom_amount"/>
+			Custom Amount</label>
+			<input type="text" id="custom_amount"/>
+		</p>
+		
+		<p>
+			<label for="date">Payment Date </label>
+			<input type="date" id="date"/>
+		</p>
+		<p>
+			<label for="memo">Memo</label>
+			<textarea cols="20" rows=""></textarea>
+        </p>
+			
+	<!--
+		  
+		  
+	--> 	 
+          
 	
-	<input type="button" class="balance_button" id="balance_continue" onclick="location.href='payment.html';" value="Continue" />
+		
+	<input type="button" class="back_buttons" id="balance_back" onclick="location.href='portal.html';" value="Back" />
+	
+	<input type="button" class="next_buttons" id="balance_continue" onclick="location.href='payment.html';" value="Continue" />
 	
 	
 	</fieldset>
