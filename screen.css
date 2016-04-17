@@ -104,12 +104,6 @@ legend{
 }
 
 /*Portal Dashboard*/
-#btn_logOut{
-	width:7em;
-	float:right;
-	font-size: .85em;
-	
-}
 #main-container{
   display:flex;
   flex-flow: row wrap;
@@ -166,16 +160,10 @@ legend{
 #payment_amount{
 	display: none;
 	width:100%;
+	
 
 }
-#payment_amount label{
-	float:left;
-	width:25%;
-	text-align:left;
-}
-#payment_amount button{
-	float:left;
-}
+
 
 .display_balance{
 	display:flex;
@@ -195,7 +183,14 @@ background: linear-gradient(to bottom, #45484d 0%,rgba(0,0,0, .6)100%); /* W3C, 
 
 }
 input #payment_amount.wrapper{
-	/*display: inline;*/
+	
+}
+#balance_back{
+	float:left;
+	
+}
+#balance_continue{
+	float:right;
 }
 
 /*Payment Page*/
