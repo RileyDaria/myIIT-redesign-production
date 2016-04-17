@@ -97,6 +97,12 @@ select{
 }
 
 /*Portal Dashboard*/
+#btn_logOut{
+	width:7em;
+	float:right;
+	font-size: .85em;
+	
+}
 #main-container{
   display:flex;
   flex-flow: row wrap;
