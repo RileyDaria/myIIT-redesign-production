@@ -44,7 +44,7 @@ select{
 }
 
 legend{
-	text-align: center;
+	text-align: left;
 }
 
 /*Classes and ids for layout*/
@@ -74,7 +74,12 @@ legend{
   margin-bottom: 1.5em;
   margin-top: .5em;
 }
-
+.back_buttons{
+	float:left;
+}
+.next_buttons{
+	float:right;
+}
 
 /*Specific to certain pages*/
 
@@ -166,11 +171,11 @@ legend{
   max-width: 100%;
 }
 
-#balance_page label {
+/*#balance_page label {
  display: block;
   margin-bottom: 1.95em;
   max-width: 100%;
-}
+}*/
 
 #balance_page .inputsdiv {
  display: inline-block;
@@ -193,8 +198,8 @@ fieldset {
   
 }
 
-#payment_amount button{
-    display: inline-block;
+textarea{
+	border-radius: 0.5em;
 }
 
 .display_balance{
@@ -204,13 +209,17 @@ fieldset {
 	align-items:baseline;
 
 }
+
 #btn_pay{
 	min-width:30%;
 	float:right;
 }
 
-#balance_back, #balance_continue {
-  display: block;
+#payment_amount input{
+	margin-bottom:0;
+}
+#full_amount{
+	background-color: rgba(255, 255, 255, 0.5);
 }
 
 
@@ -223,11 +232,17 @@ fieldset {
   
 }
 
+
+form p label{
+	display:block;
+	float:left;
+	width:100%;
+	padding:0.5em 0.3em 0 0.3em;
+	text-align: left;
+	
 }
-#select_payment{
-	display:flex;
-	flex-direction:column;
-	margin: 1em auto;
+#form_account,#form_cc{
+	display:none;
 }
 
 /* Receipt */
@@ -245,12 +260,19 @@ background: linear-gradient(to bottom, #45484d 0%,rgba(0,0,0, .6)100%); /* W3C, 
   }
   #balance_page{
 	max-width: 40em;
-
-   
-
   }
-
+form p label{
+	width:35%;
+	text-align:right;
 }
+#payment_amount input{
+	margin-bottom:1.5em;
+}
+legend{
+	text-align: center;
+}
+}
+
 
 
 @media screen and (min-width: 37.5em) {
