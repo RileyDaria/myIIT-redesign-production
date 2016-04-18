@@ -194,6 +194,9 @@ textarea{
 	min-width:20%;
 
 }
+.buttons:hover{
+	color:skyblue;
+}
 
 #payment_amount input{
 	margin-bottom:0;
