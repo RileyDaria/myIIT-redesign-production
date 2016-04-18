@@ -231,10 +231,12 @@ fieldset {
 
 
 form p label {
-  max-width: 35%;
-  text-align: right;
+  width: 100%;
+  text-align: left;
+  display:block;
   font-size: .9em;
   line-height: 1.6em;
+  float:left;
 }
 
 
@@ -286,6 +288,10 @@ legend{
     float: right;
     position: relative;
     display: inline-block;
+  }
+  form p label{
+   width:35%;
+   text-align:right;
   }
 
 }
