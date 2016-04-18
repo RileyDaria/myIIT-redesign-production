@@ -51,7 +51,7 @@ button{
 }
 
 /*Classes and ids for layout*/
-#banner {
+.banner {
   background-color: black;
   color:ghostwhite;
   padding: 1em;
