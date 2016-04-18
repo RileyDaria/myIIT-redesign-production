@@ -77,15 +77,37 @@ button{
   margin-bottom: 1.5em;
   margin-top: .5em;
 }
+
 .back_buttons{
 	float:left;
 }
+
 .next_buttons{
 	float:right;
 }
-.white-transparent{
-	background-color: rgba(255, 255, 255, 0.2);	
+
+.buttons{
+	min-width:20%;
+
 }
+
+.buttons:hover{
+	color:skyblue;
+}
+
+form p label{
+	display:block;
+	float:left;
+	width:100%;
+	padding:0.5em 0.3em 0 0.3em;
+	text-align: left;
+	
+}
+
+textarea{
+	border-radius: 0.5em;
+}
+
 
 /*Specific to certain pages*/
 
@@ -171,15 +193,23 @@ button{
 	color:ghostwhite;
 	padding-bottom: 4em;
 }
+#balance_page a{
+	text-decoration: none;
+	color: skyblue;
+    text-shadow: black 1px 1px;
+}
 
 #payment_amount{
 	display: none;
 	width: 100%;
 }
 
+#payment_amount input{
+	margin-bottom:0;
+}
 
-textarea{
-	border-radius: 0.5em;
+#full_amount,#amount_method,#p_type,#payment_a{
+	background-color: rgba(255, 255, 255, 0.2);
 }
 
 .display_balance{
@@ -190,25 +220,6 @@ textarea{
 
 }
 
-.buttons{
-	min-width:20%;
-
-}
-.buttons:hover{
-	color:skyblue;
-}
-
-#payment_amount input{
-	margin-bottom:0;
-}
-#full_amount,#amount_method,#p_type,#payment_a{
-	background-color: rgba(255, 255, 255, 0.2);
-}
-.input{
-	max-width:12.5em;
-}
-
-
 /*Payment Page*/
 
 #payment_page{
@@ -218,15 +229,6 @@ textarea{
   
 }
 
-
-form p label{
-	display:block;
-	float:left;
-	width:100%;
-	padding:0.5em 0.3em 0 0.3em;
-	text-align: left;
-	
-}
 #form_account,#form_cc, #student_info,#review{
 	display:none;
 }

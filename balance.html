@@ -10,19 +10,12 @@
   <div id="banner">
     my<span>IllinoisTech</span><h1>Student Account</h1>
   </div>
-
-	<div id="student_account">
 	<div class="wrapper" id="balance_page">
-	<!--<div class="balance_nav">>
-	<div><a href >Payment History</a></div>
-	<div><a href >Payment Plans</a></div>
-	<div><a href >Bill Statements</a></div>
-	</div>
-	-->
+
 	<h2>Current Balance:</h2>
 	<div class="display_balance">
-	<div><label for="due">Due:</label></div>
-		<div>$1000.00 | <a href id="details">Details</a>
+	<div>Due:</div>
+		<div id="due">$1000.00 | <a href="#" id="details">Details</a>
 		</div>
 		
 	</div>
@@ -32,36 +25,30 @@
 	<form id="payment_amount">
 	<fieldset >
 	
-		<legend><h3>Select Payment Amount</h3></legend>
+		<legend>Select Payment Amount</legend>
 		<p>
-			<label for="full_amount">
-				<input type ="radio" name="amount"  value="full_amount"/>
+			<label for="f_amount">
+			<input type ="radio" name="amount" id="f_amount" value="full_amount"/>
 			Full Amount Due</label>
 			<input type="text" readonly id="full_amount" value="$1000.00"/>
 		</p>
 		<p>
-			<label for="custom_amount">
-			<input type ="radio" name="amount" id="custom_amount" value="custom_amount"/>
+			<label for="c_amount">
+			<input type ="radio" name="amount" id="c_amount" value="custom_amount"/>
 			Custom Amount</label>
 			<input type="text" id="custom_amount"/>
 		</p>
 		
 		<p>
 			<label for="date">Payment Date </label>
-			<input type="date" id="date" class="input"/>
+			<input type="date" id="date" />
 		</p>
 		<p>
 			<label for="memo">Memo</label>
-			<textarea cols="20" rows="" class="input"></textarea>
+			<textarea id="memo"></textarea>
+
         </p>
-			
-	<!--
-		  
-		  
-	--> 	 
-          
-	
-		
+
 	<button class="back_buttons buttons" id="cancel_amount">Cancel</button>
 	
 	<input type="button" class="next_buttons buttons" id="balance_continue" onclick="location.href='payment.html';" value="Continue" />
@@ -70,9 +57,7 @@
 	</fieldset>
 	</form>
 </div>
-  
-</body>
-<script>
+ <script>
 	var pay = document.getElementById('btn_pay');
 	var cancel = document.getElementById('cancel_amount');
 	
@@ -88,5 +73,7 @@
 	
 	
 	});
-</script>
+</script> 
+</body>
+
 </html>
