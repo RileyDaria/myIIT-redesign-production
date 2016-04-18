@@ -13,9 +13,9 @@
   <div class="wrapper" id="payment_page">
 		<form id="select_payment">
 		<fieldset>
-		<legend><h3>Select Payment Method</h3></legend>
+		<legend>Select Payment Method</legend>
 		
-		<p>	<label for="p_amount">Payment Amount:</label>
+		<p>	<label for="amount_method">Payment Amount:</label>
 		<input type="text" value="$500.00" readonly id="amount_method"/>
 		
 			
@@ -36,7 +36,7 @@
     <!--Payment information for Checking/Savings starts below-->
 	<form id="form_account">
 	<fieldset>
-    <legend><h3>Payment Information</h3></legend>
+    <legend>Payment Information</legend>
 
 	<p>
      <label for="form-routing"> Routing Number: </label>
@@ -48,7 +48,7 @@
 	</p>
 	<p>
 	<label for="account"> Account Type:  </label>
-     <select name="account_field">
+     <select id="account" name="account_field">
 		<option value="Checking"> Checking </option>
 		<option value="Savings"> Savings  </option>
      </select>
@@ -57,13 +57,8 @@
 <!--Payment information for Credit cards starts below-->
 <form id="form_cc">
 <fieldset>
-    <legend><h3>Payment Information</h3></legend>
-     <!--<label for="form-date"> Payment Date: </label>
-       <input type="date" name="date_field" id= "form-date"/>
-
-     <label for="form-amount"> Payment Amount: </label>
-       <input type="text" name="amount_field" class= "form-amount"  maxlength="50"/>
--->	<p>
+    <legend>Payment Information</legend>
+	<p>
      <label for="form-card"> Cardholder Name: </label>
        <input type="text" name="card_field" id= "form-card"  maxlength="50"/>
 	</p>
@@ -75,7 +70,7 @@
        <input type="text" name="expiration_field" id= "form-expiration"  maxlength="5"/>
 	</p><p>   
 	   <label for="form-CVV"> CVV: </label>
-       <input type="text" name="cvv_field" id= "form-cvv"  maxlength="3"/>
+       <input type="text" name="cvv_field" id= "form-CVV"  maxlength="3"/>
 	</p><p>
 		 <label for="form-email"> Email Address: </label>
    	   <input type="text" name="email_field" id="form-email" value="example@hawk.iit.edu" maxlength="50"/>
@@ -88,7 +83,7 @@
 <!--Student information starts below-->
   <form id="student_info">
   <fieldset>
-	<legend><h3>Student Information</h3></legend>
+	<legend>Student Information</legend>
 		<p>
 		<label for="form-name"> Full Name: </label>  
 			<input type="text" name="_name_field" id= "form-name"/>
@@ -112,12 +107,12 @@
    	   <input type="text" name="postal_field" id= "form-postal"/>
 		</p>
 		<p>
-		 <label for="form-email"> Email Address: </label>
-   	   <input type="text" name="email_field" id="form-email" value="example@hawk.iit.edu" maxlength="50"/>
+		 <label for="email"> Email Address: </label>
+   	   <input type="text" name="email_field" id="email" value="example@hawk.iit.edu" maxlength="50"/>
 		</p>
   <!-- Drop down menu implemented for semester -->
      <p><label for="semester">Semester </label>
-	   <select name="sem_field">
+	   <select id="semester" name="sem_field">
          <option value="Fall '15"> Fall 2015 </option>
          <option value="Spring '16"> Spring 2016 </option>
 	
@@ -133,14 +128,14 @@
 <!-- Reviewing details starts below-->
   <form id="review" >
   <fieldset>
-    <legend><h3>Review Payment Information</h3></legend>
+    <legend>Review Payment Information</legend>
 	<p>
-    <label for="form-amount"> Payment Amount: </label>
-      <input type="text" id="payment_a"class= "white_transparent" value ="$500.00" disabled />
+    <label for="payment_a"> Payment Amount: </label>
+      <input type="text" id="payment_a" value ="$500.00" disabled />
 	</p>
 	<p>
-    <label for="p-type"> Payment Type: </label>
-   	<input type="text" name="type_field" id="p_type" class="white_transparent"  value="" disabled />
+    <label for="p_type"> Payment Type: </label>
+   	<input type="text" name="type_field" id="p_type" value="" disabled />
 	</p>
 	
 	<input type="button" onclick="location.href='receipt.html';" value="Submit Payment" class="next_buttons buttons"/>
@@ -152,7 +147,6 @@
 	</form>
        <!-- Sending information and sumbitting form -->
 	</div>
-</body>
 <script>
 	var method = document.getElementById('p_method');
 	var account = document.getElementById('form_account');
@@ -213,6 +207,9 @@
 
 	
 </script>
+	
+</body>
+
 
 	
 
