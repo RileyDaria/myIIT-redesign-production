@@ -135,6 +135,9 @@ textarea{
 .citybackground {
   background: url("images/tube.jpg") no-repeat center center fixed;
   background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  
 }
 
 /*Portal Dashboard*/
