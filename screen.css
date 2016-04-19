@@ -115,6 +115,7 @@ textarea{
 
 .login {
   max-width: 40em;
+  height: 40em;
 }
 
 .login input, button{
@@ -147,6 +148,7 @@ textarea{
 	font-size: .85em;
 	
 }
+
 #main-container{
   display:flex;
   flex-flow: row wrap;
@@ -233,7 +235,18 @@ textarea{
 }
 
 #form_account,#form_cc, #student_info,#review{
-	display:none;
+    display:none;
+}
+
+form p label{
+  max-width: 35%;
+  text-align:right;
+}
+#payment_amount input{
+    margin-bottom:1.5em;
+}
+legend{
+    text-align: center;
 }
 
 /* Receipt */
@@ -260,28 +273,9 @@ textarea{
   .sections img {
     float: right;
     position: relative;
-    top: 1em;
     display: inline;
   }
-  #balance_page{
-	max-width: 40em;
-  }
-form p label{
-	width:35%;
-	text-align:right;
-}
-#payment_amount input{
-	margin-bottom:1.5em;
-}
-legend{
-	text-align: center;
-}
-fieldset {
-    border: 1px solid white;
-    padding: 1em;
-    border-radius: .5em;
-    margin-bottom: 1.5em;
-  }
+
 }
 
 
@@ -294,7 +288,7 @@ fieldset {
   
   .wrapper {
     margin: 2em;
-    border: 1px solid;
+    border: 1px solid black;
     border-radius: .5em;
     padding: 2em;
   }
@@ -311,11 +305,19 @@ fieldset {
     font-family: 'Futura', sans-serif;
 
   }
-  #balance_page, #payment_page{
+  
+  #balance_page, #payment_page, #receipt_page{
 	margin: 1em auto;
+    max-width: 40em;
   }
   
-
+  
+  fieldset {
+    border: 1px solid white;
+    padding: 1em;
+    border-radius: .5em;
+    margin-bottom: 1.5em;
+  }
   
   
 }
