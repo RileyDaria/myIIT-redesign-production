@@ -203,6 +203,7 @@ fieldset {
 /*********Balance Page***********/
 #balance_page{
 	color:ghostwhite;
+	padding-bottom:4em;
  
 }
 
@@ -247,7 +248,7 @@ form p label {
 /*Payment Page*/
 #payment_page{
   color: ghostwhite;
-
+  padding-bottom: 4em;
 }
 
 #form_account,#form_cc, #student_info,#review{
