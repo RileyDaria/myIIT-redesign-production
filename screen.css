@@ -84,10 +84,6 @@ button{
   margin-top: .5em;
 }
 
-.back_buttons{
-	float:left;
-}
-
 .next_buttons{
 	float:right;
 }
@@ -107,7 +103,6 @@ form p label{
 	width:100%;
 	padding:0.5em 0.3em 0 0.3em;
 	text-align: left;
-	
 }
 
 textarea{
@@ -202,17 +197,16 @@ fieldset {
   background-size: cover;
 }
 
-/*Balance Page***********/
+/*********Balance Page***********/
 #balance_page{
 	color:ghostwhite;
-	padding-bottom: 4em;
-     height: 100vh;
+    height: 100vh;
 }
+
 #balance_page a{
 	text-decoration: none;
 	color: skyblue;
-    text-shadow: black 1px 1px;
-   
+    text-shadow: black 1px 1px;  
 }
 
 #payment_amount{
@@ -221,10 +215,10 @@ fieldset {
 }
 
 #payment_amount input{
-	margin-bottom:0;
+	margin-bottom: 0;
 }
 
-#full_amount,#amount_method,#p_type,#payment_a{
+#full_amount, #amount_method,#p_type,#payment_a{
 	background-color: rgba(255, 255, 255, 0.2);
 }
 
@@ -233,31 +227,35 @@ fieldset {
 	flex-direction:row;
 	justify-content:space-between;
 	align-items:baseline;
-
 }
 
-/*Payment Page*/
 
+form p label {
+  max-width: 35%;
+  text-align: right;
+  font-size: .9em;
+  line-height: 1.6em;
+}
+
+
+
+/*Payment Page*/
 #payment_page{
-  color:ghostwhite;
-  max-width: 40em;
-  padding-bottom:4em;
-  height: 100vh;
+  color: ghostwhite;
+  height: 130vh;
 }
 
 #form_account,#form_cc, #student_info,#review{
     display:none;
 }
 
-form p label{
-  max-width: 35%;
-  text-align:right;
-}
 #payment_amount input{
-    margin-bottom:1.5em;
+    margin-bottom: 1.5em;
 }
+
 legend{
     text-align: center;
+    font-weight: bold;
 }
 
 /* Receipt */
@@ -268,12 +266,14 @@ legend{
 #thanks{
 	text-align:center;
 }
+
 #thanks_text{
 	border: 1px solid white;
     padding: 1em;
     border-radius: .5em;
     margin-bottom: 1.5em;
 }
+
 #thanks_text p{
 	padding:1em;
 	line-height: 2em;
@@ -291,6 +291,7 @@ legend{
 }
 
 
+/*Largest width*/
 
 @media screen and (min-width: 51.125em) {
   
@@ -335,6 +336,5 @@ legend{
     border-radius: .5em;
     margin-bottom: 1.5em;
   }
-  
   
 }
