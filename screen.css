@@ -37,18 +37,23 @@ span {
 }
 
 select{
-	background-color: rgba(10,10,10, .1) ;
-	color:ghostwhite;
-	padding: 0.5em;
-	border-radius: .5em;
+  background-color: rgba(10,10,10, .1) ;
+  color:ghostwhite;
+  padding: 0.5em;
+  border-radius: .5em;
+}
+
+option{
+  background-color: rgba(10,10,10, .55);
+  
 }
 
 legend{
-	text-align: left;
+  text-align: left;
 }
 
 button{
-	cursor: pointer;
+  cursor: pointer;
 }
 
 /*Classes and ids for layout*/
