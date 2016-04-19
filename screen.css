@@ -87,6 +87,9 @@ button{
 .next_buttons{
 	float:right;
 }
+.back_buttons{
+	float:left;
+}
 
 .buttons{
 	min-width: 20%;
